@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "Idealz"]
+	url = https://github.com/Virtual-Games/idealz.git
+	fetch = +refs/heads/*:refs/remotes/Idealz/*
+[branch "main"]
+	remote = Idealz
+	merge = refs/heads/main
+[global]
+	email = suukootj@gmail.com
+	user = Sukkoth

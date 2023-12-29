@@ -1,0 +1,60 @@
+fonts = Sequel Sans Display Semi || poppins || DM sans
+components
+    Buttons
+        Add to cart
+    cards
+        * Large with image on top, text on it, name and add to cart button (the images are carousel)
+    Bottom Nav
+        * Circle with icons
+    Product 
+        * image, fav icon, name and price under it 
+
+
+
+Page Layout
+3 Main pages
+    * Idealz
+    * idealz basics
+    * idealz one
+For each page there is a sub page
+1 Idealz
+    - Home
+        - Banners
+        - Popular campains
+        - small wide banner
+        - Campains
+            - Closing in 01:34:45
+            - Images [carousel]
+            - Name and green button
+            - Add to cart button
+        - sold out section
+        - winners section (use campains component with winners name on it)
+    - Offers
+        - two big banners
+    - Draws
+        - small banners o top (carousel)
+        - two sections under this
+        1 Winners
+            - list winners using campains with winner names
+        2 Upcoming Draws
+            - use the same component with small adjustments
+    - Tickets
+        1 Tickets
+        2 Messages 
+    - Menu
+    - Cart
+        - Discount coupon code
+        - Quantity Selector
+        - Small Campains components
+        - payment method lists
+        - modal from bottom to proceed to payment
+2 Idelaz basics
+    - Two big banners on top (side by side)
+    - Products
+        - header
+        - Category filter
+        - ProductsList (sample)
+        - Button to redirect to all products which has sort and filter
+3 idealz one    
+    this is basically the same with the first one except the part that it is in dark mode and has some outlines on buttons and navs
+4 Product Details when you click on campain
