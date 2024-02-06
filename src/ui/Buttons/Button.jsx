@@ -49,7 +49,7 @@ function Button({ children, type = "", className = "" }) {
     case "light":
       return (
         <button
-          className={`bg-gradient-to-b from-gray-50 to-gray-100 border  rounded-2xl py-4 md:py-4 mt-4 font-bold hover:from-gray-100 hover:to-gray-200`}
+          className={`bg-gradient-to-b from-gray-50 to-gray-100 border  rounded-2xl py-4 px-6 md:py-4 mt-4 font-normal hover:from-gray-100 hover:to-gray-200 text-black ${className}`}
         >
           {children}
         </button>

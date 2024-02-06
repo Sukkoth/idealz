@@ -11,7 +11,7 @@ function BottomNav() {
     <div
       className='sticky bottom-0 py-2 px-5 z-50 md:w-[35.2rem] mx-auto bg-stone-100 w-full flex justify-between font-light'
       id='bottom-nav'
-      style={{ boxShadow: "0 -20px 20px #f5f5f4" }}
+      style={{ boxShadow: "0 -15px 20px #f5f5f4" }}
     >
       <NavLink to='/'>
         <FiHome size={25} />

@@ -11,7 +11,7 @@ import Cart from "./pages/Cart";
 
 function App() {
   return (
-    <div className='max-h-[100dvh] w-full'>
+    <div className='max-h-[100dvh] w-full overflow-y-scroll scrollbar-hide'>
       <Routes>
         <Route path='/' element={<MobileContainer />}>
           <Route index element={<Home />} />

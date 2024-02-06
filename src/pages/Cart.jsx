@@ -1,7 +1,7 @@
 function Cart() {
   return (
-    <div className='flex justify-center items-center min-h-[100vh] text-2xl'>
-      Cart Page
+    <div className='flex justify-center items-center text-2xl'>
+      <h1>Cart Page</h1>
     </div>
   );
 }
