@@ -8,6 +8,7 @@ import { TbLockCog } from "react-icons/tb";
 import { MdOutlineNotificationsActive } from "react-icons/md";
 import { TfiInfoAlt } from "react-icons/tfi";
 import { PiHandHeart } from "react-icons/pi";
+import { useAuth } from "../../Providers/AuthContext";
 
 const menuList = [
   {
@@ -58,6 +59,7 @@ const menuList = [
 ];
 
 function MenuList() {
+  const { logout } = useAuth()
   return (
     <div className='mt-8 rounded-3xl bg-white border-2xl p-3 text-sm font-thin'>
       <ul className=' divide-y-[0.1rem] divide-gray-100'>
@@ -67,7 +69,7 @@ function MenuList() {
           </li>
         ))}
       </ul>
-      <button className='bg-stone-200 ml-2 px-6 mt-2 py-2 rounded-2xl font-semibold text-xs'>
+      <button className='bg-stone-200 ml-2 px-6 mt-2 py-2 rounded-2xl font-semibold text-xs' onClick={logout}>
         Logout
       </button>
     </div>

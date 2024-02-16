@@ -1,7 +1,7 @@
 import SmallCampagin from "./Small";
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import {products} from '../../../db.json'
 //Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -15,24 +15,14 @@ function SmallCampaignsContainer({ title = "Campaigns" }) {
         spaceBetween={20}
         className='w-fullborder-2 py-3'
       >
-        <SwiperSlide className='w-[45%] shadow-md rounded-2xl'>
-          <SmallCampagin />
+        {
+          products.slice(4).map(product => (
+            <SwiperSlide className='w-[45%] shadow-md rounded-2xl' key={product.id}>
+          <SmallCampagin product={product}/>
         </SwiperSlide>
-        <SwiperSlide className='w-[45%] shadow-md rounded-2xl'>
-          <SmallCampagin />
-        </SwiperSlide>
-        <SwiperSlide className='w-[45%] shadow-md rounded-2xl'>
-          <SmallCampagin />
-        </SwiperSlide>
-        <SwiperSlide className='w-[45%] shadow-md rounded-2xl'>
-          <SmallCampagin />
-        </SwiperSlide>
-        <SwiperSlide className='w-[45%] shadow-md rounded-2xl'>
-          <SmallCampagin />
-        </SwiperSlide>
-        <SwiperSlide className='w-[45%] shadow-md rounded-2xl'>
-          <SmallCampagin />
-        </SwiperSlide>
+          ))
+        }
+        
       </Swiper>
     </div>
   );

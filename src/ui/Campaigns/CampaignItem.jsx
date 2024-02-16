@@ -1,8 +1,9 @@
-import carImg from "../../assets/images/car2.png";
 import Button from "../../ui/Buttons/Button";
 import PropTypes from "prop-types";
+import CountDown from "./CountDown";
+import { calculateSecondsDifference } from "../../utils/calculateSeconds";
 
-function CampaignItem({ closingTimer, topTag }) {
+function CampaignItem({ closingTimer, topTag, product }) {
   return (
     <div className='rounded-3xl bg-white p-2 overflow-hidden'>
       {topTag && (
@@ -20,18 +21,15 @@ function CampaignItem({ closingTimer, topTag }) {
         id='image-with-tag'
       >
         {closingTimer && (
-          <div className='bg-light-red text-white w-fit px-6 py-1 rounded-full mb-2'>
-            <p className='font-thin'>Closing in</p>
-            <h1 className='font-bold text-xl'>72:56:24</h1>
-          </div>
+          <CountDown timer={calculateSecondsDifference(product.closingTime)}/>
         )}
         <div className='relative rounded-3xl overflow-hidden z-20'>
-          <img src={carImg} alt='img' />
+          <img src={`/asset/images/products/${product.images?.[0]}`} alt='img' />
           <h1 className='mt-[-4rem] z-20 absolute bottom-10 left-3 text-light-red text-[2.5rem]  md:text-[3.5rem] italic font-extrabold'>
             Win
           </h1>
           <p className='left-3 absolute bottom-4  sm:text-[1rem] md:text-[1.3rem] text-white sm:font-extrabold md:font-extrabold'>
-            BMW M4 CLS or USD81,300 Cash
+            {product?.title}
           </p>
         </div>
       </div>
@@ -39,19 +37,19 @@ function CampaignItem({ closingTimer, topTag }) {
         <div className='flex gap-2 p-2'>
           <div className='w-[80%]'>
             <h2 className='text-[20px] sm:text-xl sm:w-[60%] md:w-[75%] mb-2'>
-              Buy: USD2.80 idealzbasics products
+             {product?.subtitle}
             </h2>
             <p className='text-[12px] text-stone-400 font-light'>
-              Draw date: 30 January, 2024 or earlier based on the time passed
+              Draw date: {formatDate(product.closingTime)} or earlier based on the time passed
             </p>
           </div>
           <div className='w-[43%] md:w-[25%] border flex items-center justify-center rounded-2xl p-1'>
             <div className='bg-green-500 text-white text-[10px] text-center rounded-lg'>
               <p className='px-1 font-light'>
-                idealbasics products{" "}
+                {/* idealbasics products{" "} */}
                 <span className='text-[18px] font-bold'>
-                  <br />
-                  USD 2.8
+                  {/* <br /> */}
+                  ETB {product?.price}
                 </span>{" "}
               </p>
             </div>
@@ -65,9 +63,16 @@ function CampaignItem({ closingTimer, topTag }) {
   );
 }
 
+function formatDate(inputDateString) {
+  const options = { day: 'numeric', month: 'long', year: 'numeric' };
+  const date = new Date(inputDateString);
+  return new Intl.DateTimeFormat('en-US', options).format(date);
+}
+
 CampaignItem.propTypes = {
   closingTimer: PropTypes.bool,
   topTag: PropTypes.bool,
+  product: PropTypes.object,
 };
 
 export default CampaignItem;

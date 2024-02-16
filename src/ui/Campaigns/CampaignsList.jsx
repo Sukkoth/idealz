@@ -1,5 +1,8 @@
 import PropTypes from "prop-types";
 import CampaignItem from "./CampaignItem";
+import { products} from '../../../db.json'
+import { isJustLaunched } from "../../utils/isJustLaunched";
+import { isClosingTime } from "../../utils/isClosingTime";
 
 function CampaignsList({ title = "Explore Campaigns" }) {
   return (
@@ -8,11 +11,20 @@ function CampaignsList({ title = "Explore Campaigns" }) {
         {title}
       </h1>
       <div className='space-y-6'>
-        <CampaignItem closingTimer />
+        {/* <CampaignItem closingTimer />
         <CampaignItem />
         <CampaignItem topTag />
         <CampaignItem closingTimer topTag />
-        <CampaignItem />
+        <CampaignItem /> */}
+
+        {
+          products?.map((product) => (
+              <CampaignItem key={product.id} 
+              product={product} 
+              closingTimer={isClosingTime(product.closingTime)} 
+              topTag={isJustLaunched(product?.createdAt)}/>
+          ))
+        }
       </div>
     </div>
   );

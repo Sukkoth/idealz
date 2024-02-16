@@ -30,3 +30,8 @@ body::-webkit-scrollbar {
   width: 1.3rem;
   background-color: rgb(249, 15, 101);
 }
+
+
+form label {
+  font-weight: 300;
+}

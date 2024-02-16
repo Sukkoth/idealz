@@ -1,0 +1,310 @@
+{
+  "draws": [
+    {
+      "id": 1,
+      "date": "2024-03-16T18:40:00.000Z",
+      "img": "show1.jpg"
+    },
+    {
+      "id": 2,
+      "date": "2024-04-23T18:10:00.000Z",
+      "img": "show2.jpg"
+    },
+    {
+      "id": 3,
+      "date": "2024-05-10T18:50:00.000Z",
+      "img": "show3.jpg"
+    },
+    {
+      "id": 4,
+      "date": "2024-03-02T06:33:00.000Z",
+      "img": "show4.jpg"
+    },
+    {
+      "id": 5,
+      "date": "2024-03-02T06:33:00.000Z",
+      "img": "show1.jpg"
+    },
+    {
+      "id": 6,
+      "date": "2024-03-02T06:33:00.000Z",
+      "img": "show2.jpg"
+    },
+    {
+      "id": 7,
+      "date": "2024-03-02T06:33:00.000Z",
+      "img": "show1.jpg"
+    }
+  ],
+  "winners": [
+    {
+      "winner": "Alicia Smith",
+      "productName": "Lamborghini Huracan",
+      "ticketNumber": "ABC1234",
+      "drawDate": "2024-03-01T18:30:00.000Z",
+      "image": "winner1.jpg"
+    },
+    {
+      "winner": "Jane Smith",
+      "productName": "Huge Villa with swimmer",
+      "ticketNumber": "XYZ7890",
+      "drawDate": "2024-03-05T20:15:00.000Z",
+      "image": "winner2.jpg"
+    },
+    {
+      "winner": "Sam Johnson",
+      "productName": "Samsung galaxy S22+ Ultra",
+      "ticketNumber": "PQR5678",
+      "drawDate": "2024-03-10T14:00:00.000Z",
+      "image": "winner3.jpg"
+    },
+    {
+      "winner": "Alice Williams",
+      "productName": "Designer Laptop with NVidia graphics",
+      "ticketNumber": "MNO4321",
+      "drawDate": "2024-03-15T22:45:00.000Z",
+      "image": "winner4.jpg"
+    },
+    {
+      "winner": "Bob Anderson",
+      "productName": "LG TV 52 inch Screen",
+      "ticketNumber": "DEF9876",
+      "drawDate": "2024-03-20T12:30:00.000Z",
+      "image": "winner5.jpg"
+    }
+  ],
+  "upcoming": [
+    {
+      "winner": "Alicia Smith",
+      "productName": "Lamborghini Huracan",
+      "ticketNumber": "ABC1234",
+      "drawDate": "2024-03-01T18:30:00.000Z",
+      "image": "car_1.jpg"
+    },
+    {
+      "winner": "Jane Smith",
+      "productName": "Mercedez Flow",
+      "ticketNumber": "XYZ7890",
+      "drawDate": "2024-03-05T20:15:00.000Z",
+      "image": "car_2.jpg"
+    },
+    {
+      "winner": "Sam Johnson",
+      "productName": "Smart TV",
+      "ticketNumber": "PQR5678",
+      "drawDate": "2024-03-10T14:00:00.000Z",
+      "image": "tv_image1.jpg"
+    },
+    {
+      "winner": "Alice Williams",
+      "productName": "Fitness Tracker",
+      "ticketNumber": "MNO4321",
+      "drawDate": "2024-03-15T22:45:00.000Z",
+      "image": "tracker_image1.jpg"
+    },
+    {
+      "winner": "Bob Anderson",
+      "productName": "Wireless Headphones",
+      "ticketNumber": "DEF9876",
+      "drawDate": "2024-03-20T12:30:00.000Z",
+      "image": "headphones_image1.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Lamborghini",
+      "subtitle": "Lamborghini Huracan",
+      "description": "ASuperCharged Car with v8 engine",
+      "closingTime": "2024-02-18T20:14:50",
+      "price": 199.99,
+      "totalTickets": 600,
+      "remainingTickets": 300,
+      "status": "Active",
+      "images": ["car_1.jpg", "chair_image2.jpg"],
+      "createdAt": "2024-02-16T07:56:54.721Z"
+    },
+    {
+      "id": "2",
+      "title": "Mercedez Flow",
+      "subtitle": "A brand new luxury car",
+      "description": "A stylish car with various features",
+      "closingTime": "2024-02-17T01:45:00",
+      "price": 129.99,
+      "totalTickets": 800,
+      "remainingTickets": 400,
+      "status": "Active",
+      "images": ["car_2.jpg", "watch_image2.jpg"],
+      "createdAt": "2024-02-16T01:56:54.721Z"
+    },
+    {
+      "id": "3",
+      "title": "Smart TV",
+      "subtitle": "Immersive entertainment experience",
+      "description": "A smart TV with 4K resolution, streaming capabilities, and a sleek design for your living room.",
+      "closingTime": "2024-03-10T18:45:10.000Z",
+      "price": 999.99,
+      "totalTickets": 200,
+      "remainingTickets": 100,
+      "status": "Active",
+      "images": ["tv_image1.jpg", "tv_image2.jpg"],
+      "createdAt": ""
+    },
+    {
+      "id": "4",
+      "title": "Gaming Console",
+      "subtitle": "Ultimate gaming experience",
+      "description": "A gaming console with cutting-edge graphics, multiplayer capabilities, and a vast game library.",
+      "closingTime": "2024-03-15T09:15:00.000Z",
+      "price": 499.99,
+      "totalTickets": 250,
+      "remainingTickets": 125,
+      "status": "Active",
+      "images": ["console_image1.jpg", "console_image2.jpg"],
+      "createdAt": ""
+    },
+    {
+      "id": "5",
+      "title": "Fitness Tracker",
+      "subtitle": "Track your health and fitness",
+      "description": "A sleek fitness tracker that monitors your daily activities, heart rate, and sleep patterns.",
+      "closingTime": "2024-02-17T02:45:00",
+      "price": 129.99,
+      "totalTickets": 300,
+      "remainingTickets": 150,
+      "status": "Active",
+      "images": ["tracker_image1.jpg", "tracker_image2.jpg"],
+      "createdAt": "2024-02-16T01:56:54.721Z"
+    },
+    {
+      "id": "6",
+      "title": "Camera",
+      "subtitle": "Capture life's moments",
+      "description": "A high-quality digital camera with advanced features for capturing stunning photographs and videos.",
+      "closingTime": "2024-03-25T21:00:00.000Z",
+      "price": 899.99,
+      "totalTickets": 350,
+      "remainingTickets": 175,
+      "status": "Active",
+      "images": ["camera_image1.jpg", "camera_image2.jpg"],
+      "createdAt": "2024-02-16T01:56:54.721Z"
+    },
+    {
+      "id": "7",
+      "title": "Wireless Headphones",
+      "subtitle": "Immersive audio experience",
+      "description": "Wireless headphones with noise-cancellation technology, delivering a superior audio experience.",
+      "closingTime": "2024-02-17T03:15:00",
+      "price": 149.99,
+      "totalTickets": 400,
+      "remainingTickets": 200,
+      "status": "Active",
+      "images": ["headphones_image1.jpg", "headphones_image2.jpg"],
+      "createdAt": "2024-02-16T04:56:54.721Z"
+    },
+    {
+      "id": "8",
+      "title": "Coffee Maker",
+      "subtitle": "Brew your favorite coffee at home",
+      "description": "A stylish coffee maker with multiple brewing options for the perfect cup of coffee every time.",
+      "closingTime": "2024-04-05T08:00:00.000Z",
+      "price": 79.99,
+      "totalTickets": 450,
+      "remainingTickets": 225,
+      "status": "Active",
+      "images": ["coffee_maker_image1.jpg", "coffee_maker_image2.jpg"],
+      "createdAt": ""
+    },
+    {
+      "id": "9",
+      "title": "Wireless Speaker",
+      "subtitle": "Portable music companion",
+      "description": "A compact wireless speaker with impressive sound quality, perfect for on-the-go music lovers.",
+      "closingTime": "2024-04-10T17:30:00.000Z",
+      "price": 59.99,
+      "totalTickets": 500,
+      "remainingTickets": 250,
+      "status": "Active",
+      "images": ["speaker_image1.jpg", "speaker_image2.jpg"],
+      "createdAt": ""
+    },
+    {
+      "id": "10",
+      "title": "Ebook Reader",
+      "subtitle": "Your library in the palm of your hand",
+      "description": "An e-ink ebook reader with a glare-free screen, ideal for avid readers on the go.",
+      "closingTime": "2024-04-15T10:15:00.000Z",
+      "price": 129.99,
+      "totalTickets": 550,
+      "remainingTickets": 275,
+      "status": "Active",
+      "images": ["ebook_reader_image1.jpg", "ebook_reader_image2.jpg"],
+      "createdAt": ""
+    },
+    {
+      "id": "11",
+      "title": "Smartphone",
+      "subtitle": "Stay connected on the go",
+      "description": "An advanced smartphone with a stunning display, powerful camera, and long-lasting battery life.",
+      "closingTime": "2024-02-17T01:45:00",
+      "price": 799.99,
+      "totalTickets": 150,
+      "remainingTickets": 75,
+      "status": "Active",
+      "images": ["phone_image1.jpg", "phone_image2.jpg"],
+      "createdAt": "2024-02-16T01:56:54.721Z"
+    },
+    {
+      "id": "12",
+      "title": "Desk Chair",
+      "subtitle": "Comfortable and ergonomic",
+      "description": "An ergonomic desk chair designed for maximum comfort and support during long working hours.",
+      "closingTime": "2024-04-20T14:45:00.000Z",
+      "price": 199.99,
+      "totalTickets": 600,
+      "remainingTickets": 300,
+      "status": "Active",
+      "images": ["chair_image1.jpg", "chair_image2.jpg"],
+      "createdAt": ""
+    },
+    {
+      "id": "14",
+      "title": "Robot Vacuum Cleaner",
+      "subtitle": "Effortless cleaning at your fingertips",
+      "description": "A smart robot vacuum cleaner that navigates your home, keeping it clean with minimal effort.",
+      "closingTime": "2024-04-30T09:00:00.000Z",
+      "price": 299.99,
+      "totalTickets": 700,
+      "remainingTickets": 350,
+      "status": "Active",
+      "images": ["robot_vacuum_image1.jpg", "robot_vacuum_image2.jpg"],
+      "createdAt": ""
+    },
+    {
+      "id": "15",
+      "title": "Laptop",
+      "subtitle": "Powerful performance for work and play",
+      "description": "A high-performance laptop with the latest specifications, perfect for both work and entertainment.",
+      "closingTime": "2024-04-20T14:45:00.000Z",
+      "price": 1299.99,
+      "totalTickets": 100,
+      "remainingTickets": 50,
+      "status": "Active",
+      "images": ["laptop_image1.jpg", "laptop_image2.jpg"],
+      "createdAt": "2024-02-16T07:56:54.721Z"
+    },
+    {
+      "id": "16",
+      "title": "Outdoor Grill",
+      "subtitle": "Grill your favorite meals outdoors",
+      "description": "A durable outdoor grill for hosting barbecues and enjoying delicious grilled dishes with friends and family.",
+      "closingTime": "2024-05-05T13:15:00.000Z",
+      "price": 399.99,
+      "totalTickets": 750,
+      "remainingTickets": 375,
+      "status": "Active",
+      "images": ["grill_image1.jpg", "grill_image2.jpg"],
+      "createdAt": ""
+    }
+  ]
+}

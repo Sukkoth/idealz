@@ -2,6 +2,9 @@ import { useState } from "react";
 import WinnersCampaign from "../ui/Campaigns/Draws/WinnersCampaign";
 import LiveDraws from "../ui/Campaigns/Draws/LiveDraws";
 import SetActiveTab from "../components/Draw/SetActiveTab";
+
+import {winners, upcoming} from '../../db.json'
+
 function Draws() {
   const [activeTab, setActiveTab] = useState("winners"); // winners | upcoming
   return (
@@ -13,14 +16,18 @@ function Draws() {
 
       {activeTab === "winners" && (
         <>
-          <WinnersCampaign type='winners' topSticker />
-          <WinnersCampaign type='winners' />
+          {winners.map(winner => (
+            <WinnersCampaign type="winners" winner={winner} key={winner.ticketNumber}/>
+          ))}
         </>
       )}
       {activeTab === "upcoming" && (
         <>
-          <WinnersCampaign type='upcoming' />
-          <WinnersCampaign type='upcoming' />
+          {
+            upcoming?.map((upcoming) => (
+              <WinnersCampaign type='upcoming' winner={upcoming} key={upcoming.ticketNumber}/>
+            ))
+          }
         </>
       )}
     </div>
