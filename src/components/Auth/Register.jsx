@@ -26,7 +26,7 @@ function Register() {
   }, [user, navigate])
 
   return (
-    <div className='mt-10'>
+    <div className='mt-10 grid'>
       <h1 className='text-rowdies text-2xl'> Register Now and get <span className='text-light-red'>discount</span> for your first purchase</h1>
       <form className='space-y-3 px-5 mt-10' onSubmit={handleRegister}>
         <p className='text-red-500 text-sm'>{error}</p>

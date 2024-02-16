@@ -24,8 +24,6 @@ function Auth() {
         {
           tab === 'login' ? <Login /> : <Register />
         }
-
-
       </div>
     </section>
   )
