@@ -7,7 +7,7 @@ function Auth() {
 
   return (
     <section>
-      <div className='bg-gray-200 rounded-2xl mt-10'>
+      <div className='bg-gray-200 rounded-2xl mt-10 min-h-[100vh]'>
         <button
           className={`w-1/2 p-2 py-4 rounded-2xl font-normal ${tab === 'login' ? "bg-white" : ""
             }`}
