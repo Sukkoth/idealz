@@ -6,8 +6,8 @@ function Auth() {
   const [tab, setTab] = useState('login')
 
   return (
-    <section>
-      <div className='bg-gray-200 rounded-2xl mt-10 min-h-[100vh]'>
+    <section className='min-h-[100dvh]'>
+      <div className='bg-gray-200 rounded-2xl mt-10 '>
         <button
           className={`w-1/2 p-2 py-4 rounded-2xl font-normal ${tab === 'login' ? "bg-white" : ""
             }`}
