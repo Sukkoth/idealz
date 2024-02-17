@@ -9,22 +9,24 @@ function Auth() {
     <section className='min-h-[100dvh]'>
       <div className='bg-gray-200 rounded-2xl mt-10 '>
         <button
-          className={`w-1/2 p-2 py-4 rounded-2xl font-normal ${tab === 'login' ? "bg-white" : ""
-            }`}
+          className={`w-1/2 p-2 py-2 xs:py-4 rounded-2xl font-normal ${
+            tab === 'login' ? 'bg-white' : ''
+          }`}
           onClick={() => setTab('login')}
-        >Login</button>
+        >
+          Login
+        </button>
         <button
-          className={`w-1/2 p-2 py-4 rounded-2xl font-normal ${tab === 'register' ? "bg-white" : ""
-            }`}
+          className={`w-1/2 p-2 py-2 xs:py-4 rounded-2xl font-normal ${
+            tab === 'register' ? 'bg-white' : ''
+          }`}
           onClick={() => setTab('register')}
-        >Register</button>
+        >
+          Register
+        </button>
       </div>
 
-      <div>
-        {
-          tab === 'login' ? <Login /> : <Register />
-        }
-      </div>
+      <div>{tab === 'login' ? <Login /> : <Register />}</div>
     </section>
   )
 }

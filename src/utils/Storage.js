@@ -4,7 +4,6 @@ export class Storage {
   }
 
   static set(key, data) {
-    console.log('set to local')
     localStorage.setItem(key, JSON.stringify(data))
   }
 

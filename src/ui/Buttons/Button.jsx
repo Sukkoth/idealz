@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types'
 
 /**
  * Button Component
@@ -28,36 +28,54 @@ import PropTypes from "prop-types";
  * <Button  type="light">Click me</Button>
  */
 
-function Button({ children, type = "", className = "", btnType = 'button' }) {
+function Button({
+  children,
+  type = '',
+  className = '',
+  btnType = 'button',
+  onClick,
+}) {
   switch (type) {
-    case "primary":
+    case 'primary':
       return (
-        <button type={btnType}
+        <button
+          type={btnType}
+          onClick={onClick && onClick}
           className={`bg-gradient-to-b from-purple-500 to-purple-800 text-white rounded-2xl py-4 md:py-4 mt-4 font-bold hover:from-purple-400 hover:to-purple-700 ${className} `}
         >
           {children}
         </button>
-      );
-    case "dark":
+      )
+    case 'dark':
       return (
-        <button type={btnType}
+        <button
+          type={btnType}
+          onClick={onClick && onClick}
           className={`bg-gradient-to-b from-gray-500 to-gray-800 text-white rounded-2xl py-4 md:py-4 mt-4 font-bold hover:from-gray-400 hover:to-gray-700`}
         >
           {children}
         </button>
-      );
-    case "light":
+      )
+    case 'light':
       return (
-        <button type={btnType}
+        <button
+          type={btnType}
+          onClick={onClick && onClick}
           className={`bg-gradient-to-b from-gray-50 to-gray-100 border  rounded-2xl py-4 px-6 md:py-4 mt-4 font-normal hover:from-gray-100 hover:to-gray-200 text-black ${className}`}
         >
           {children}
         </button>
-      );
+      )
     default:
-      <button type={btnType} className='bg-gradient-to-b from-stone-500 to-stone-800 rounded-2xl py-4 md:py-4 mt-4 font-bold hover:from-violet-400 hover:to-violet-700 w-full'>
-        {children}
-      </button>;
+      return (
+        <button
+          type={btnType}
+          onClick={onClick && onClick}
+          className='bg-gradient-to-b from-stone-500 to-stone-800 rounded-2xl py-4 md:py-4 mt-4 font-bold hover:from-violet-400 hover:to-violet-700 w-full'
+        >
+          {children}
+        </button>
+      )
   }
 }
 
@@ -66,5 +84,6 @@ Button.propTypes = {
   type: PropTypes.string.isRequired,
   className: PropTypes.string,
   btnType: PropTypes.string,
-};
-export default Button;
+  onClick: PropTypes.func,
+}
+export default Button
